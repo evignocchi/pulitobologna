@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { footerLegalLinks, footerServiceLinks, site } from "@/lib/site";
 
@@ -7,9 +8,13 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-5 py-14 sm:px-8">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p className="text-xl font-extrabold tracking-tight text-cream">
-              Pulito<span className="text-mist">Bologna</span>
-            </p>
+            <Image
+              src="/brand/logo-light.png"
+              alt={site.name}
+              width={581}
+              height={290}
+              className="h-9 w-auto"
+            />
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-cream/65">
               {site.tagline}
             </p>

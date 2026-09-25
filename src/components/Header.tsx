@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { mainNav, site } from "@/lib/site";
@@ -10,12 +11,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-charcoal/10 bg-cream/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
-        <Link
-          href="/"
-          className="text-xl font-extrabold tracking-tight text-forest"
-          onClick={() => setOpen(false)}
-        >
-          Pulito<span className="text-charcoal">Bologna</span>
+        <Link href="/" onClick={() => setOpen(false)}>
+          <Image
+            src="/brand/logo-dark.png"
+            alt={site.name}
+            width={581}
+            height={290}
+            priority
+            className="h-9 w-auto sm:h-10"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
