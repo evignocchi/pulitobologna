@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type Variant = "hero" | "card" | "wide" | "square";
 
 const variantAspect: Record<Variant, string> = {
@@ -11,11 +13,39 @@ export function VisualPlaceholder({
   variant = "card",
   label,
   className = "",
+  src,
+  alt,
+  priority,
 }: {
   variant?: Variant;
   label?: string;
   className?: string;
+  src?: string;
+  alt?: string;
+  priority?: boolean;
 }) {
+  if (src) {
+    return (
+      <div
+        className={`relative overflow-hidden rounded-3xl bg-forest ${variantAspect[variant]} ${className}`}
+      >
+        <Image
+          src={src}
+          alt={alt ?? ""}
+          fill
+          sizes="(min-width: 1024px) 50vw, 100vw"
+          className="object-cover"
+          priority={priority}
+        />
+        {label ? (
+          <span className="absolute bottom-5 left-5 rounded-full bg-cream/90 px-3.5 py-1.5 text-xs font-semibold text-forest">
+            {label}
+          </span>
+        ) : null}
+      </div>
+    );
+  }
+
   return (
     <div
       className={`relative overflow-hidden rounded-3xl bg-forest ${variantAspect[variant]} ${className}`}

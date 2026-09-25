@@ -28,7 +28,14 @@ export function Hero() {
             </CtaButton>
           </div>
         </div>
-        <VisualPlaceholder variant="hero" label={site.areaShort} className="hidden lg:block" />
+        <VisualPlaceholder
+          variant="hero"
+          label={site.areaShort}
+          src="/media/Bologna Centro Storico.jpg"
+          alt="Portici del centro storico di Bologna"
+          priority
+          className="hidden lg:block"
+        />
       </div>
     </section>
   );
