@@ -96,6 +96,8 @@ export default function PulizieCondominiPage() {
         title="Un'impresa di pulizie che non devi rincorrere."
         subtitle="Continuità, puntualità e comunicazione semplice: tutto quello che un amministratore cerca in un fornitore di fiducia."
         features={features}
+        image="/media/Palazzo Condominiale Esterno.jpg"
+        imageAlt="Esterno di un palazzo condominiale a Bologna"
       />
       <HowItWorks />
       <Faq items={condominiFaq} title="Domande frequenti sui condomini" />

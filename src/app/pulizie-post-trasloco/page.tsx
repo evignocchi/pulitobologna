@@ -53,6 +53,8 @@ export default function PulizieTraslocoPage() {
         title="Un ambiente pronto, in ogni fase del trasloco."
         subtitle="Che tu debba entrare in un nuovo spazio o lasciarlo pulito dietro di te, ci pensiamo noi."
         features={features}
+        image="/media/Pulizia Pavimento con Aspirapolvere.jpg"
+        imageAlt="Pulizia approfondita del pavimento con aspirapolvere"
       />
       <HowItWorks />
       <RelatedServices excludeSlug="pulizie-post-trasloco" />

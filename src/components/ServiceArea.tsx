@@ -1,4 +1,5 @@
 import { Section, SectionHeading } from "@/components/Section";
+import { VisualPlaceholder } from "@/components/VisualPlaceholder";
 import { site } from "@/lib/site";
 
 export function ServiceArea() {
@@ -9,11 +10,11 @@ export function ServiceArea() {
           title="A Bologna e nei comuni limitrofi."
           subtitle={site.areaLong}
         />
-        <div className="flex h-56 items-center justify-center rounded-3xl border border-charcoal/10 bg-mist-soft sm:h-72">
-          <p className="px-8 text-center text-sm font-semibold text-charcoal/50">
-            {site.areaShort}
-          </p>
-        </div>
+        <VisualPlaceholder
+          variant="wide"
+          src="/media/Bologna Centro Storico.jpg"
+          alt="Portici del centro storico di Bologna"
+        />
       </div>
     </Section>
   );

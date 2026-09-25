@@ -53,6 +53,8 @@ export default function PulizieResidenzialiPage() {
         title="La tua casa, sempre in ordine."
         subtitle="Un servizio di pulizia pensato per adattarsi al ritmo della tua famiglia."
         features={features}
+        image="/media/Pulizia Pavimento Cucina con Mocio.jpg"
+        imageAlt="Pulizia del pavimento della cucina con il mocio"
       />
       <HowItWorks />
       <RelatedServices excludeSlug="pulizie-residenziali" />

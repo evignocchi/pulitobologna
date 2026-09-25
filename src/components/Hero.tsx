@@ -31,8 +31,8 @@ export function Hero() {
         <VisualPlaceholder
           variant="hero"
           label={site.areaShort}
-          src="/media/Bologna Centro Storico.jpg"
-          alt="Portici del centro storico di Bologna"
+          src="/media/Ritratto Addetta Pulizie in Cucina.jpg"
+          alt="Addetta alle pulizie al lavoro in una cucina"
           priority
           className="hidden lg:block"
         />

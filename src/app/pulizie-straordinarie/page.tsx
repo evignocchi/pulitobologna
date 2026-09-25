@@ -53,6 +53,8 @@ export default function PulizieStraordinariePage() {
         title="Quando serve un intervento in più."
         subtitle="Per ambienti che richiedono una pulizia più approfondita rispetto alla routine."
         features={features}
+        image="/media/Pulizia Vetri Finestra.jpg"
+        imageAlt="Pulizia approfondita dei vetri di una finestra"
       />
       <HowItWorks />
       <RelatedServices excludeSlug="pulizie-straordinarie" />

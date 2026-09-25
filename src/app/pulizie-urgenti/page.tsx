@@ -47,6 +47,8 @@ export default function PulizieUrgentiPage() {
         title="Un imprevisto da gestire in fretta?"
         subtitle="Raccontaci cosa è successo: verifichiamo insieme la disponibilità più rapida possibile."
         features={features}
+        image="/media/Primo Piano Pulizia Vetro.jpg"
+        imageAlt="Dettaglio di una pulizia rapida e accurata"
       />
       <RelatedServices excludeSlug="pulizie-urgenti" />
       <FinalCta />

@@ -53,6 +53,8 @@ export default function PulizieUfficiPage() {
         title="Tu pensi al lavoro, noi pensiamo alla pulizia."
         subtitle="Uffici, negozi, studi professionali e altri ambienti di lavoro, sempre ordinati e presentabili."
         features={features}
+        image="/media/Squadra Pulizie Open Space.jpg"
+        imageAlt="Squadra di pulizie al lavoro in un ufficio open space"
       />
       <HowItWorks />
       <RelatedServices excludeSlug="pulizie-uffici-attivita-commerciali" />
